@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div[class*= "box"]{
+            height: 200px;
+            width: 300px;
+            padding: 20px;
+            border: 10px solid black;
+            background-color: teal;
+        }
+        .border-box{
+            box-sizing: border-box;
+            /* height => 200px */
+            /* Total Height => 200px - (2*20) - (2*10) = 140 */
+             /* Width => 300px */
+            /* Total Width => 300px - (2*20) - (2*10) = 240px */
+        }
+        .content-box{
+            box-sizing: content-box;
+            /* height => 200px */
+            /* Total Height => 200px + (2*20) + (2*10) = 260 */
+             /* Width => 300px */
+            /* Total Width => 300px + (2*20) + (2*10) = 360px */
+        }
+    </style>
+</head>
+<body>
+    <div class="border-box">240px * 140px</div>
+    <hr>
+    <div class="content-box">360px * 260px </div>
+</body>
+</html>
