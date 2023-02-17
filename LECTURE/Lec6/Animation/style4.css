@@ -8,13 +8,11 @@ body {
 }
 .box{
     background: #fff;
-    height: 300px;
-    width: 300px;
+    height: 200px;
+    width: 200px;
     position: relative;
     animation-name: myanimation;
-    animation-duration: 5s;
-    animation-delay: 2s;
-    animation-duration: 10s;
+    animation-duration: 3s;
     animation-timing-function: linear;
     animation-timing-function: ease-out;
     animation-timing-function: ease-in-out;
