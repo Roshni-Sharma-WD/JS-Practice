@@ -1,0 +1,19 @@
+body {
+    background-color: #bc7777;
+}
+
+.box {
+    background: #fff;
+    height: 300px;
+    width: 300px;
+    position: relative;
+    margin: auto;
+    top: 200px;
+    transition-property: background, border-redius, transform;
+    transition-duration: 3s 5s;
+    tra
+}
+
+.box:hover {
+    background-color: red;
+}
