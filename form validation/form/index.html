@@ -11,7 +11,7 @@
 
 <body>
 
-    <form name="contactform" onsubmit="return validateform()" action="confirmation.php" method="post">
+    <form name="contactform" onsubmit="return false" method="post">
         <h2>Application Form</h2>
 
         <div class="row">
@@ -28,7 +28,7 @@
 
         <div class="row">
             <label>Mobile Number</label>
-            <input type="text" name="mobile" maxlength="10">
+            <input type="text" name="mobile">
             <div class="error" id="mobileErr"></div>
         </div>
 
@@ -39,7 +39,7 @@
                 <option>India</option>
                 <option>Australia</option>
                 <option>United States</option>
-                <option>UnitedKingdom</option>
+                <option>United Kingdom</option>
             </select>
             <div class="error" id="countryErr"></div>
         </div>
